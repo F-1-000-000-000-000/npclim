@@ -7,7 +7,7 @@ A command-line tool for managing nginx (and nginx-derived) reverse proxy configu
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/npclim
+git clone https://github.com/F-1-000-000-000-000/npclim
 cd npclim
 go build -o npclim
 ```
