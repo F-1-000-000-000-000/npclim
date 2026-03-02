@@ -22,12 +22,12 @@ or add the npclim directory to your $PATH variable.
 
 ## Configuration
 
-npclim reads from `~/.config/npclim/config`. All flags can be set here as defaults:
+npclim reads from `~/.config/npclim/config`. All flags can be set here as defaults using their long-form names:
 
 ```yaml
 proxy-location: /etc/nginx/sites-enabled/
 domain: example.com
-filename: "{{.Subdomain}}.conf"
+filename-template: "{{.Subdomain}}.conf"
 ```
 
 You can also place a custom template at `~/.config/npclim/template.conf` and it will be used automatically (see [Templates](#templates)).
