@@ -37,9 +37,29 @@ You can also place a custom template at `~/.config/npclim/template.conf` and it 
 ### List proxy hosts
 
 ```bash
+npclim                     # root command defaults to ls
 npclim ls                  # list filenames
 npclim ls -l               # list with domain and proxy info
 npclim ls /path/to/dir     # list from a specific directory
+```
+
+Example output:
+```
+user@homeserver:~$ npclim -l
+Proxies found in /etc/angie/http.d/proxies:
+audiobookshelf.conf  audiobookshelf.example.com -> http://localhost:13378
+calibre.conf                calibre.example.com -> http://localhost:8083
+code.conf                      code.example.com -> http://localhost:8443
+dockhand.conf              dockhand.example.com -> http://localhost:3333
+frigate.conf                frigate.example.com -> http://localhost:5000
+hass.conf                      home.example.com -> http://localhost:8123
+immich.conf                  immich.example.com -> http://localhost:2283
+navidrome.conf            navidrome.example.com -> http://localhost:4533
+plex.conf                      plex.example.com -> http://localhost:32400
+pocketid.conf              pocketid.example.com -> http://localhost:1411
+termix.conf                  termix.example.com -> http://localhost:6666
+tinyauth.conf              tinyauth.example.com -> http://localhost:3100
+wireguard.conf            wireguard.example.com -> http://localhost:88
 ```
 
 ### Create a new proxy host
